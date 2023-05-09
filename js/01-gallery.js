@@ -24,12 +24,12 @@ gallery.insertAdjacentHTML('beforeend',galleryMarkup);
 
 
 gallery.addEventListener("click", (event) => {
-  event.preventDefault;
+  event.preventDefault();
   if (event.target.nodeName !== "IMG") {
     return;
   }
   const instance = basicLightbox.create(`
-    <img class"modal" src="${event.target.dataset.source}" wiidh="800" height="600">
+    <img class="modal" src="${event.target.dataset.source}" wiidh="800" height="600">
 `);
 instance.show()
 }
